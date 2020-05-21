@@ -1,0 +1,6 @@
+C:\Users\thiago.novaes\Desktop\Thiago\Programing\Homework - String\ContagemEspacosVogais\bin\Debug\ContagemEspacosVogais.exe.config
+C:\Users\thiago.novaes\Desktop\Thiago\Programing\Homework - String\ContagemEspacosVogais\bin\Debug\ContagemEspacosVogais.exe
+C:\Users\thiago.novaes\Desktop\Thiago\Programing\Homework - String\ContagemEspacosVogais\bin\Debug\ContagemEspacosVogais.pdb
+C:\Users\thiago.novaes\Desktop\Thiago\Programing\Homework - String\ContagemEspacosVogais\obj\Debug\ContagemEspacosVogais.csprojAssemblyReference.cache
+C:\Users\thiago.novaes\Desktop\Thiago\Programing\Homework - String\ContagemEspacosVogais\obj\Debug\ContagemEspacosVogais.exe
+C:\Users\thiago.novaes\Desktop\Thiago\Programing\Homework - String\ContagemEspacosVogais\obj\Debug\ContagemEspacosVogais.pdb
