@@ -13,9 +13,20 @@ namespace ContagemEspacosVogais
             Console.WriteLine("Digite uma frase: ");
             string frase = Console.ReadLine().ToLower();
 
+            int qtdeEspaco = QtdeEspaco(frase);
+            int qtdeVogal = QtdeVogal(frase);
+
+            Console.WriteLine("A quantidade de espaços é igual a: " + qtdeEspaco);
+            Console.WriteLine("A quantidade de vogais é igual a: " + qtdeVogal);
+
+            Console.ReadLine();
+        }
+
+    public static int QtdeVogal(string sentence)
+        {
             int qtdeVogal = 0;
-            int qtdeEspaco = 0;
-            char[] fraseInserida = frase.ToCharArray();
+
+            char[] fraseInserida = sentence.ToCharArray();
 
             for (int i = 0; i < fraseInserida.Length; i++)
             {
@@ -29,31 +40,39 @@ namespace ContagemEspacosVogais
                     qtdeVogal++;
                 if (fraseInserida[i].ToString() == "u")
                     qtdeVogal++;
-                if (fraseInserida[i].ToString() == " ")
-                    qtdeEspaco++;
                 if (fraseInserida[i].ToString() == "é")
-                    qtdeEspaco++;
+                    qtdeVogal++;
                 if (fraseInserida[i].ToString() == "ê")
-                    qtdeEspaco++;
+                    qtdeVogal++;
                 if (fraseInserida[i].ToString() == "ã")
-                    qtdeEspaco++;
+                    qtdeVogal++;
                 if (fraseInserida[i].ToString() == "á")
-                    qtdeEspaco++;
+                    qtdeVogal++;
                 if (fraseInserida[i].ToString() == "â")
-                    qtdeEspaco++;
+                    qtdeVogal++;
                 if (fraseInserida[i].ToString() == "à")
-                    qtdeEspaco++;
+                    qtdeVogal++;
                 if (fraseInserida[i].ToString() == "õ")
-                    qtdeEspaco++;
+                    qtdeVogal++;
                 if (fraseInserida[i].ToString() == "ô")
+                    qtdeVogal++;
+            }
+            return qtdeVogal;
+        }
+
+        public static int QtdeEspaco(string sentence)
+        {
+            int qtdeEspaco = 0;
+
+            char[] fraseInserida1 = sentence.ToCharArray();
+
+            for (int i = 0; i < fraseInserida1.Length; i++)
+            {
+                if (fraseInserida1[i].ToString() == " ")
                     qtdeEspaco++;
             }
 
-            Console.WriteLine("A quantidade de espaços é igual a: " + qtdeEspaco);
-            Console.WriteLine("A quantidade de vogais é igual a: " + qtdeVogal);
-            
-            Console.ReadLine();
+            return qtdeEspaco;
         }
-
     }
 }
